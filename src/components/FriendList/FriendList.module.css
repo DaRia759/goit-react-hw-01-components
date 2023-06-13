@@ -1,0 +1,16 @@
+.friendList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friendItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.friendItem:last-child {
+  border-bottom: none;
+}
