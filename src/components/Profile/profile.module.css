@@ -1,0 +1,36 @@
+.userCard {
+    background-color: aliceblue;
+    border-radius: 15;
+}
+
+.userDescription {
+    background-color: #fff;
+}
+
+.userAvatar {
+    font-size: smaller;
+}
+
+.userName {
+    font-style: italic;
+}
+
+.userTag {
+    color: black;
+}
+
+.userLocation {
+    margin-top: auto;
+}
+
+.userStats {
+    margin: auto;
+}
+
+.userLabel {
+    padding: 0cap;
+}
+
+.userQuantity {
+    font-size: large;
+}
