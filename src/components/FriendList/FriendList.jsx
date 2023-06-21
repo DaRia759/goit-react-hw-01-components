@@ -11,7 +11,7 @@ function FriendList({ friends }) {
                         avatar={friend.avatar}
                         name={friend.name}
                         isOnline={friend.isOnline}
-                    />
+                    ></FriendItem>
                 </li>
             ))}
         </ul>
