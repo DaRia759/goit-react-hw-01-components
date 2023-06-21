@@ -1,24 +1,38 @@
 import PropTypes from 'prop-types';
 import css from './Satistics.module.css';
 
-function Statistics({title, data}) {
+function Statistics({ title, stats }) {
     return (
         <section className={css.statistics}>
-            {title ? <h2 className={css.stisticTitle}>Upload stats</h2> : ''}
+            {title ? <h2 className={css.statisticTitle}>Upload stats</h2> : ''}
 
             <ul className={css.statList}>
-                {data.map(item => (
-                <li className={css.statiscticItem} key={item.id}>
-                    <span className={css.statsticLabel}>{item.label}</span>
-                    <span className={css.statisticPercentage}>{item.percentage}</span>
-                </li>))}
+                {stats.map(stat => (
+                    <li
+                        className={css.statisticItem}
+                        key={stat.id}
+                        style={{ backgroundColor: generateRandomColor() }}
+                    >
+                        <span className={css.statisticLabel}>{stat.label}</span>
+                        <span className={css.statisticPercentage}>{stat.percentage}</span>
+                    </li>
+                ))}
             </ul>
         </section>
     );
 }
+
+function generateRandomColor() {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
 Statistics.propTypes = {
     title: PropTypes.string,
-    data: PropTypes.array.isRequired,
+    stats: PropTypes.array.isRequired,
 };
 
 export default Statistics;

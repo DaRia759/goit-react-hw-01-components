@@ -1,65 +1,11 @@
-/* .userCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-
-.userDescription {
-    background-color: #fff;
-    text-align: center;
-}
-
-.userAvatar {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-}
-
-.userName {
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 30px;
-  
-}
-
-.userTag {
-  color: grey;
-  font-size: 18px;
-}
-
-.userLocation {
-  text-decoration: none;
-  font-size: 15px;
-  color: black;
-}
-
-.userStats {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-    border-radius: 30px;
-}
-
-.userLabel {
-
-}
-
-.userQuantity {
-    display: flex;
-} */
-
-
 .userCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin: auto;
+  background-color: #f1f1f1;
 }
 
 .userDescription {
@@ -68,40 +14,50 @@
 }
 
 .userAvatar {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin-bottom: 10px;
 }
 
 .userName {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
+  margin: 10px 0;
 }
 
 .userTag {
-  font-size: 14px;
-  color: #777;
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 10px;
 }
 
 .userLocation {
   font-size: 14px;
-  color: #777;
-  margin-top: 5px;
+  color: gray;
+}
+
+.userStats {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .userStats li {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .userLabel {
-  font-size: 14px;
-  color: #777;
+  font-weight: bold;
 }
 
 .userQuantity {
-  font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
 }

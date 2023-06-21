@@ -3,6 +3,10 @@
   border-collapse: collapse;
 }
 
+.transactionHead {
+  background-color: aqua;
+}
+
 .transactionHistory th,
 .transactionHistory td {
   padding: 10px;
