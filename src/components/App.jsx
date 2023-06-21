@@ -20,7 +20,7 @@ function App() {
       location={location}
       avatar={avatar}
       stats={stats}
-      ></Profile>
+      />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
