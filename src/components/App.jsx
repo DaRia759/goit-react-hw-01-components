@@ -19,8 +19,7 @@ function App() {
       tag={tag}
       location={location}
       avatar={avatar}
-      stats={stats}
-      />
+      stats={stats} />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
