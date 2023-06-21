@@ -1,4 +1,4 @@
-import "../components/App.module.css"
+import "../components/App.module.css";
 import Profile from "./Profile/Profile";
 import Statistics from "./Statistics/Statistics";
 import FriendList from "./FriendList/FriendList";
@@ -15,16 +15,17 @@ function App() {
   return (
     <div className='App'>
       <Profile
-      username={username}
-      tag={tag}
-      location={location}
-      avatar={avatar}
-      stats={stats} />
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        stats={stats}
+      />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
-  )
+  );
 }
 
 export default App;
