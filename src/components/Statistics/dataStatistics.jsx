@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Satistics.module.css';
+import css from './dataSatistics.module.css';
 
 function Statistics({ title, stats }) {
     return (
