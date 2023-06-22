@@ -1,6 +1,6 @@
 import "../components/App.module.css";
 import Profile from './Profile/userProfile';
-import Statistics from "./Statistics/Statistics";
+import Statistics from "./Statistics/dataStatistics";
 import FriendList from "./FriendList/FriendList";
 import TransactionHistory from "./TransactionHistory/TransactionHistory";
 
